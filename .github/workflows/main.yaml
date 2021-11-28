@@ -16,3 +16,9 @@ jobs:
 
       - name: Build
         run: sbt -v +assembly
+
+      - name: Build image
+        run: docker build -t jartest .
+
+      - name: Run tests in container
+        run: docker run -t jartest
