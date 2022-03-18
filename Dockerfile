@@ -1,4 +1,4 @@
-FROM adoptopenjdk/openjdk11
+FROM adoptopenjdk/openjdk11:alpine-jre
 
 WORKDIR /tests
 
